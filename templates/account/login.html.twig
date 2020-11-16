@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion au site{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-3">&nbsp;</div>
+        <div class="col-md-6">
+            <div class="bg-light py-3 px-3">
+                <h1> Connectez vous!</h1>
+
+                    {% if hasError %}
+                        <div class="alert alert-danger">une erreur est survenue, le nom d'utilisateur ou alors le mot de passe est invalide
+                        </div>
+                    {% endif %}
+
+                    <form action="{{ path('account_login') }}" method="post">
+                         <div class="form-groupe">
+                                 <label for="email"> Email </label>
+                                 <input type="text" name="_username" id="email" class="form-control" placeholder="adresse email ...." required value="{{ username }}">
+                          </div>
+                         <div class="form-groupe">
+                                 <label for="password"> Mot de pass </label>
+                                 <input type="password" name="_password" id="password" class="form-control" placeholder="mot de passe ...." required>
+                         </div><br>
+                         <div class="form-groupe">
+                            <button type="submit" class="btn btn-success"> Connexion ! </button>
+                          </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
