@@ -11,6 +11,9 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
@@ -129,6 +132,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kLXv23gNLbvmYJU7FeNIeKlwk2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -147,7 +151,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605481079400</updated>
-      <workItem from="1605481080446" duration="667000" />
+      <workItem from="1605481080446" duration="713000" />
     </task>
     <servers />
   </component>
